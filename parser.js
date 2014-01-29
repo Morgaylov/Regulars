@@ -12,11 +12,9 @@ function getMatches(text, reg)
     {
         if(sentences[i].search(reg) != -1)
         {
-            found [i] = sentences[i];
+            found.push(sentences[i]);
         }
     }
-
-    console.log(found);
 
     return found;
 }
